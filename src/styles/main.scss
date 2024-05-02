@@ -1,3 +1,6 @@
+@import 'modulos.scss';
+@import 'variaveis.scss';
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +9,7 @@
 }
 
 body {
-    background-color: #f5f6fa;
+    background-color: $background-color;
 }
 
 li {
@@ -14,13 +17,13 @@ li {
 }
 
 .container {
-    max-width: 1024px;
+    max-width: $desktopwidth;
     width: 100%;
     margin: 0 auto;
 }
 
 header {
-    background-color: #182C61;
+    background-color: $headercolor;
     position: sticky;
     top: 0;
     left: 0;
@@ -67,7 +70,7 @@ section {
 
 .product-button {
     display: block;
-    background-color: #44bd32;
+    background-color: $buttonhovercolor;
     color: #fff;
     text-align: center;
     padding: 8px 0;
@@ -77,7 +80,7 @@ section {
 }
 
 .product-button:hover {
-    background-color: #4cd137;
+    background-color: $buttoncolor;
 }
 
 @media screen and (max-width: 1023px) {
@@ -93,7 +96,7 @@ section {
 
 @media screen and (max-width: 767px) {
     .products {
-        display: block;
+        display: $mobiledisplay;
     }
 
     .product-item  {
